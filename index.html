@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Document</title>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      rel="stylesheet"
+    />
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.6.2/jquery.mockjax.min.js"></script>
+    <script src="js/bundle.js"></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-xl-12">
+          <h3>Калькулятор каллорий</h3>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="form-inline w-100">
+          <div class="form-group mx-sm-3 mb-2 w-75">
+            <input
+              class="form-control w-100"
+              id="autocomplete-ajax"
+              placeholder="Введите название продукта"
+              type="text"
+            />
+            <input type="hidden" id="autocomplete-ajax-x" />
+          </div>
+          <button class="btn btn-primary mb-2 add-product">Добавить</button>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-xl-12">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">№</th>
+                <th scope="col" width="320">Наименование продукта</th>
+                <th scope="col">Вес, г</th>
+                <th scope="col">Белки, г</th>
+                <th scope="col">Жиры, г</th>
+                <th scope="col">Углеводы, г</th>
+                <th scope="col">Калории, ккал</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="tbl_body"></tbody>
+            <tfoot>
+              <tr class="align-items-center">
+                <th scope="row"></th>
+                <td><b>Итого:</b></td>
+                <td>
+                  <b id="tbl_w">0</b>
+                </td>
+                <td><b id="tbl_p">0,00</b></td>
+                <td><b id="tbl_f">0,00</b></td>
+                <td><b id="tbl_c">0,00</b></td>
+                <td><b id="tbl_k">0,00</b></td>
+                <td></td>
+              </tr>
+              <tr class="align-items-center">
+                <th scope="row"></th>
+                <td><b>Итого на 100 грамм:</b></td>
+                <td></td>
+                <td><b id="tbl_p100">0,00</b></td>
+                <td><b id="tbl_f100">0,00</b></td>
+                <td><b id="tbl_c100">0,00</b></td>
+                <td><b id="tbl_k100">0,00</b></td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
